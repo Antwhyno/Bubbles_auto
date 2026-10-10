@@ -15,7 +15,7 @@ def get_idle_time_seconds():
     elapsed_ms = ctypes.windll.kernel32.GetTickCount() - lii.dwTime
     return elapsed_ms / 1000.0
 
-IDLE_LIMIT = 900  # Inactivité en secondes (ex: 20 minutes)
+IDLE_LIMIT = 900  # Inactivité en secondes (ex: 15 minutes)
 BUBBLES_LIMIT = 40 * 60  # Temps total d'activité de Bubbles en secondes
 SCR_PATH = r"C:\Windows\System32\Bubbles.scr"
 
